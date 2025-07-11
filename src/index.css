@@ -15,3 +15,12 @@
   margin: -25px 0px 0px 89px;
   font-size: 1.3rem;
 }
+
+main{
+  min-height: 82vh;
+}
+footer{
+   background-color: rgb(238, 241, 171);
+   padding: 1rem;
+
+}
