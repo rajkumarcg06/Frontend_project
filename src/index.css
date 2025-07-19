@@ -7,15 +7,16 @@
 }
 
 .logo-img{
-  height: 7rem;
-  width: 6rem;
+  height: 6rem;
+  width: 5rem;
 }
 
 .logo-text{
   margin: -25px 0px 0px 89px;
   font-size: 1.3rem;
-  margin-top: -3rem;
-  margin-right: 2rem;
+  margin-top: -4rem;
+  /* margin-right: 3.5rem; */
+  
 }
 
 main{
@@ -41,3 +42,6 @@ marquee{
   text-align: justify;
 }
 
+tr,td{
+  text-align: center;
+}

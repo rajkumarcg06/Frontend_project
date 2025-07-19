@@ -42,7 +42,7 @@ const Header = () => {
                         <NavDropdown title="Examination" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#">Examination Guidlines</NavDropdown.Item>
                         <NavDropdown.Item href="#">Examination Application</NavDropdown.Item>
-                        <LinkContainer to='/result'>
+                        <LinkContainer to='/result_login'>
                             <NavDropdown.Item href="#">Result</NavDropdown.Item>
                         </LinkContainer>
                         </NavDropdown>
@@ -56,6 +56,8 @@ const Header = () => {
                         <NavDropdown title="Staff Login" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#">Login as Admin</NavDropdown.Item>
                         </NavDropdown>
+
+                {/* <Image src='images/Karnataka-rightlogo.png' alt='VTU' className="logo-img"/> */}
                 </Nav>
               </Navbar.Collapse>
             </Container>

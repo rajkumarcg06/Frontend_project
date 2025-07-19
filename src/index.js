@@ -9,7 +9,8 @@ import { createBrowserRouter,
 import HomeScreen from './screens/homeScreen';
 import AboutUs from './screens/AboutUs';
 import Admission from './screens/Admission';
-import Result from './screens/Result';
+import Result_Login from './screens/Result_Login';
+import ResultPage from './screens/ResultPage';
 
 
   const router = createBrowserRouter(
@@ -20,7 +21,8 @@ import Result from './screens/Result';
         <Route path='/admission' element={<Admission />}/>
 
 
-        <Route path='/result' element={<Result/>}/>
+        <Route path='/result_login' element={<Result_Login/>}/>
+        <Route path='/result_page' element={<ResultPage/>}/>
       </Route>
     )
   )

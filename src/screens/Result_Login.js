@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Row,Col,Form, Button } from "react-bootstrap";
 
-const Result =()=>{
+const Result_Login =()=>{
 
     return(
         <>
@@ -19,8 +19,8 @@ const Result =()=>{
                 <Col></Col>
                 <Col style={{marginLeft:'-20rem'}}>      
                 <Form>
-                    <label>Enter your Register Number : </label><br></br>
-                    <input type="text" placeholder="Enter Your Register Number" 
+                    <Form.Label>Enter your Register Number : </Form.Label><br></br>
+                    <Form.Control type="text" placeholder="Enter Your Register Number" 
                     style={{width:"70%"}}/><br/>
                     <Button type="submit" style={{marginTop:'1rem'}}>Submit</Button>
                 </Form>
@@ -30,4 +30,4 @@ const Result =()=>{
         </>
     )
 }
-export default Result
+export default Result_Login
