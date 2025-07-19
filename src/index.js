@@ -8,6 +8,8 @@ import { createBrowserRouter,
   createRoutesFromElements, Route, RouterProvider} from 'react-router-dom';
 import HomeScreen from './screens/homeScreen';
 import AboutUs from './screens/AboutUs';
+import Admission from './screens/Admission';
+import Result from './screens/Result';
 
 
   const router = createBrowserRouter(
@@ -15,6 +17,10 @@ import AboutUs from './screens/AboutUs';
       <Route path='/' element={<App/>}>
         <Route index ={HomeScreen} path='/' element={<HomeScreen/>}/>
         <Route path='/about' element={<AboutUs/>}/>
+        <Route path='/admission' element={<Admission />}/>
+
+
+        <Route path='/result' element={<Result/>}/>
       </Route>
     )
   )

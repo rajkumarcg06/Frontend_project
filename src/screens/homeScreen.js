@@ -1,31 +1,38 @@
 import React from "react";
 import { Container,Row,Col,Carousel,Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const HomeScreen =() => {
     return(
         <>
         <div>
             <marquee> VTU Results 2024 out - Check Exam results here !! 
-                <a href="#"> Click here....</a>Best of luck!!!
+                <Link to="/result"> Click here....</Link>Best of luck!!!
             </marquee>
         </div>
 
         <div>
             <Carousel> 
              <Carousel.Item>
-         <img className="img1" src="images/img1.jpeg"/>
+         <img className="img1" src="images/vtu-banner-1.jpg"/>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="img1" src="images/img2.webp"></img>
+        <img className="img1" src="images/vtu-banner-2.png"></img>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="img1" src="images/img3.jpeg"></img>
+        <img className="img1" src="images/vtu-banner-3.png"></img>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="img1" src="images/img4.jpg"></img>
+        <img className="img1" src="images/vtu-banner-4.png"></img>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="img1" src="images/img5.jpg"></img>
+        <img className="img1" src="images/vtu-banner-5.png"></img>
+        <Carousel.Item>
+        <img className="img1" src="images/vtu-banner-6.jpg"></img>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="img1" src="images/vtu-banner-6.png"></img>
+      </Carousel.Item>
       </Carousel.Item>
     </Carousel>
     </div>
@@ -33,7 +40,7 @@ const HomeScreen =() => {
     <div>
         <Row>
             <Col>
-                <h3><a href="#">Vision</a></h3>
+                <h3><Link to="/about">Vision</Link></h3>
                 <p className="p-style">To plan the development of technical education, to 
                     establish value-based and need-based education and training in egineering and technology,
                     with a view to generate qualified and competent manpower,
@@ -46,11 +53,11 @@ const HomeScreen =() => {
                     responsive to technological and social nedds.
                 </p>
 
-                <Button variant="warning">Read More.....</Button>
+                <Link to='/about' className="btn btn-warning">Read More</Link>
             </Col>
 
              <Col>
-                <h3><a href="#">Mission</a></h3>
+                <h3><Link to="/about">Mission</Link></h3>
                 <p className="p-style">To plan the development of technical education, to 
                     establish value-based and need-based education and training in egineering and technology,
                     with a view to generate qualified and competent manpower,
@@ -63,11 +70,11 @@ const HomeScreen =() => {
                     responsive to technological and social nedds.
                 </p>
 
-                <Button variant="warning">Read More.....</Button>
+                <Link to='/about' className="btn btn-warning">Read More</Link>
             </Col>
 
              <Col>
-                <h3><a href="#">Mandate</a></h3>
+                <h3><Link to="/about">Mandate</Link></h3>
                 <p className="p-style">To plan the development of technical education, to 
                     establish value-based and need-based education and training in egineering and technology,
                     with a view to generate qualified and competent manpower,
@@ -80,7 +87,7 @@ const HomeScreen =() => {
                     responsive to technological and social nedds.
                 </p>
 
-                <Button variant="warning">Read More.....</Button>
+                <Link to='/about' className="btn btn-warning">Read More</Link>
             </Col>
         </Row>
     </div>

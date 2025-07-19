@@ -7,13 +7,15 @@
 }
 
 .logo-img{
-  height: 5rem;
-  width: 5rem;
+  height: 7rem;
+  width: 6rem;
 }
 
 .logo-text{
   margin: -25px 0px 0px 89px;
   font-size: 1.3rem;
+  margin-top: -3rem;
+  margin-right: 2rem;
 }
 
 main{
