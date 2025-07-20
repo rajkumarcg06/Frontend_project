@@ -1,8 +1,27 @@
-import React from "react";
+import React ,{useState,useEffect} from "react";
 import { Row,Col,Form } from "react-bootstrap";
+import { useParams } from "react-router-dom";
 import TableData from "./Tabledata";
+import axios from "axios";
 
 const ResultPage=() =>{
+
+    const[studentDetails, setStudentDetails]= useState([])
+
+    const value= useParams()
+
+    useEffect(()=> {
+        axios.get('http://localhost:3002/studentinfo')
+        .then((response)=> {
+            response.data.map((data) => {
+                if(data.registerId === value.id)
+                    setStudentDetails(data)
+
+            })
+        })
+    },[])
+
+
     return (
         <>
             <Row className="justify-content-center my-5" >
@@ -16,17 +35,17 @@ const ResultPage=() =>{
                 <Col sm={12} md={6}>
                 <Form.Group>
                     <Form.Label>Student Name :</Form.Label>
-                    <Form.Label style={{marginLeft:"4.5rem"}}>John</Form.Label><br/>
+                    <Form.Label style={{marginLeft:"4.5rem"}}>{studentDetails.studentName}</Form.Label><br/>
                     <Form.Label>Father's/mother's Name :</Form.Label>
-                    <Form.Label style={{marginLeft:"0.5rem"}}>smith</Form.Label><br/>
+                    <Form.Label style={{marginLeft:"0.5rem"}}>{studentDetails.FatherName}</Form.Label><br/>
                     <Form.Label>College Name :</Form.Label>
-                    <Form.Label style={{marginLeft:"4rem"}}>Presidency University</Form.Label>
+                    <Form.Label style={{marginLeft:"4.5rem"}}>{studentDetails.collegeName}</Form.Label>
                 </Form.Group>
                 </Col>
 
                 <Col sm={12} md={6}>
                 <Form.Group>
-                    <Form.Label style={{float:'right'}}>Register No. : 1IS21CSE221</Form.Label>
+                    <Form.Label style={{float:'right'}}>RegiterID : {studentDetails.registerId}</Form.Label>
                     
                 </Form.Group>
                 </Col>
@@ -34,7 +53,7 @@ const ResultPage=() =>{
 
 
             <Row>
-                <TableData />
+                <TableData studentId ={studentDetails.registerId} />
             </Row>
         </>
     )

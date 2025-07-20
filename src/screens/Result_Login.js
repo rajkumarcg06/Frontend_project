@@ -13,7 +13,7 @@ const Result_Login =()=>{
     // const [studentData, setStudentData] = useState(null);
 
     const navigate = useNavigate() 
-    const value= useParams()
+    
 
 
     const SubmitHandler =(e)=>{
@@ -22,7 +22,7 @@ const Result_Login =()=>{
             setError("Please Enter Your RegiterID")
         } 
         else{
-            axios.get("http://localhost:3001/resultLoginPage")
+            axios.get("http://localhost:3002/studentinfo")
         .then((response) => {
         //   const student = res.data.find((s) => s.registerId === registerInput);
         //   if (student) {
@@ -41,7 +41,7 @@ const Result_Login =()=>{
         response.data.map((data, index) => {
 
             if(data.registerId === registerInput){
-            navigate(`/result_page/${value.id}`)
+            navigate(`/result_page/${registerInput}`)
             }else{
                 setError("Invalid Register ID")
             }

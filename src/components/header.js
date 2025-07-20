@@ -84,9 +84,11 @@ const Header = () => {
               </NavDropdown>
 
               <NavDropdown title="VTU Department" id="dept-dropdown">
-                <NavDropdown.Item>Civil Engineering</NavDropdown.Item>
-                <NavDropdown.Item>CSE</NavDropdown.Item>
-                <NavDropdown.Item>ECE</NavDropdown.Item>
+                <NavDropdown.Item href="pdf/civil.pdf">Civil Engineering</NavDropdown.Item>
+                <NavDropdown.Item href="pdf/CSE-1.pdf">Computer Science Engineering</NavDropdown.Item>
+                <NavDropdown.Item href="pdf/EEE-1.pdf">Electrical and Electronics Engineering</NavDropdown.Item>
+                <NavDropdown.Item href="pdf/mech.pdf">Mechanical Engineering</NavDropdown.Item>
+                <NavDropdown.Item href="pdf/aiml.pdf">Artificial Intelligence and Machine Learning</NavDropdown.Item>
               </NavDropdown>
 
               <NavDropdown title="Staff Login" id="staff-dropdown">
@@ -94,6 +96,13 @@ const Header = () => {
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
+
+          {/* <Image
+                src="images/Karnataka-rightlogo.png"
+                alt="VTU"
+                className="logo-img"
+                roundedCircle
+              /> */}
         </Container>
       </Navbar>
     </header>

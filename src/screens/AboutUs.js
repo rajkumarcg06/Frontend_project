@@ -23,13 +23,13 @@ const AboutUs=() => {
             <p><h2>Mandate</h2><br/>The Visvesvaraya Technological University has 
                 been established by the Government of the Karnataka 
                 in order to Promote planned and sustainable development 
-                of technical education consistent with state and national policies.
-                *Design need based programs that ensure adequate human resource
-                   of the right kind.
-                *Establish objective evaluation and certification systems 
-                  for students,programs and institutions.
-                *Collaborate with national and international institutions
-                 R&D establishments organizations like AICTE, MHRD, UGC, etc.industry and user agencies.</p>
+                of technical education consistent with state and national policies.<br/>
+                <li>Design need based programs that ensure adequate human resource
+                   of the right kind.</li>
+                <li>Establish objective evaluation and certification systems 
+                  for students,programs and institutions.</li>
+                <li>Collaborate with national and international institutions
+                 R&D establishments organizations like AICTE, MHRD, UGC, etc.industry and user agencies.</li></p>
             <Image className="abt-img" src="images/about-3.jpg" style={{float:'right'}}/>
         </div>
         </>
