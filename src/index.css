@@ -45,3 +45,89 @@ marquee{
 tr,td{
   text-align: center;
 }
+.abt{
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.abt-img{
+  height: auto;
+  width: 45%;
+  border-radius: 10px;
+}
+
+.adm-div-1{
+  display: flex;
+}
+
+.adm-div-2{
+  border: 2px solid orange;
+  background-color: orange;
+  padding: 0.7rem 2.5rem;
+  height: 7rem;
+  font-weight: 600;
+
+}
+.adm-p{
+  border: 1px solid black;
+  width: 50%;
+  margin: 1rem 2rem 0rem 7rem;
+  font-size: larger;
+  display: flex;
+  align-items: flex-start;
+}
+.hover-text {
+  margin-left: 10px;
+  transition: color 2s ease, text-decoration 0.3s ease;
+  padding: 0.5rem;
+}
+
+.adm-p:hover{
+  background-color: antiquewhite;
+}
+
+.hover-text:hover {
+  color: #0bec38; 
+  
+}
+
+.nested-dropdown{
+  position: relative;
+
+}
+
+.nested-dropdown .submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  min-width: 200px;
+  background-color: white;
+  border: 1px solid #ddd;
+  z-index: 1000;
+}
+.nested-dropdown:hover .submenu {
+  display: block;
+}
+
+.course-div{
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #f1e6e6;
+}
+
+.course-tr1{
+  background-color: #0bec38;
+  position:static;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+
+}
+
+.course-tr-2:hover{
+  background-color: #ddd;
+}
+

@@ -11,6 +11,8 @@ import AboutUs from './screens/AboutUs';
 import Admission from './screens/Admission';
 import Result_Login from './screens/Result_Login';
 import ResultPage from './screens/ResultPage';
+import Circular from './screens/Circular';
+import Course from './screens/Course';
 
 
   const router = createBrowserRouter(
@@ -19,10 +21,12 @@ import ResultPage from './screens/ResultPage';
         <Route index ={HomeScreen} path='/' element={<HomeScreen/>}/>
         <Route path='/about' element={<AboutUs/>}/>
         <Route path='/admission' element={<Admission />}/>
+        <Route path='/circular' element={<Circular/>}/>
+        <Route path ='/courses' element={<Course/>}/>
 
 
         <Route path='/result_login' element={<Result_Login/>}/>
-        <Route path='/result_page' element={<ResultPage/>}/>
+        <Route path='/result_page/:id' element={<ResultPage/>}/>
       </Route>
     )
   )

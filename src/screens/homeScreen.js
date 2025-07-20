@@ -41,16 +41,8 @@ const HomeScreen =() => {
         <Row>
             <Col>
                 <h3><Link to="/about">Vision</Link></h3>
-                <p className="p-style">To plan the development of technical education, to 
-                    establish value-based and need-based education and training in egineering and technology,
-                    with a view to generate qualified and competent manpower,
-                    responsive to technological and social nedds.
-                </p>
-
-                <p className="p-style">To plan the development of technical education, to 
-                    establish value-based and need-based education and training in egineering and technology,
-                    with a view to generate qualified and competent manpower,
-                    responsive to technological and social nedds.
+                <p className="p-style">To become an outstanding 
+                    technological university at the cutting edge of science technology.
                 </p>
 
                 <Link to='/about' className="btn btn-warning">Read More</Link>
@@ -58,16 +50,8 @@ const HomeScreen =() => {
 
              <Col>
                 <h3><Link to="/about">Mission</Link></h3>
-                <p className="p-style">To plan the development of technical education, to 
-                    establish value-based and need-based education and training in egineering and technology,
-                    with a view to generate qualified and competent manpower,
-                    responsive to technological and social nedds.
-                </p>
-
-                <p className="p-style">To plan the development of technical education, to 
-                    establish value-based and need-based education and training in egineering and technology,
-                    with a view to generate qualified and competent manpower,
-                    responsive to technological and social nedds.
+                <p className="p-style">To plan the development of technical 
+                    education, to establish value-based and need based education and traing.
                 </p>
 
                 <Link to='/about' className="btn btn-warning">Read More</Link>
@@ -75,16 +59,8 @@ const HomeScreen =() => {
 
              <Col>
                 <h3><Link to="/about">Mandate</Link></h3>
-                <p className="p-style">To plan the development of technical education, to 
-                    establish value-based and need-based education and training in egineering and technology,
-                    with a view to generate qualified and competent manpower,
-                    responsive to technological and social nedds.
-                </p>
-
-                <p className="p-style">To plan the development of technical education, to 
-                    establish value-based and need-based education and training in egineering and technology,
-                    with a view to generate qualified and competent manpower,
-                    responsive to technological and social nedds.
+                <p className="p-style">Establish objective 
+                    evaluation and certification system for students,programs and institutions.
                 </p>
 
                 <Link to='/about' className="btn btn-warning">Read More</Link>
