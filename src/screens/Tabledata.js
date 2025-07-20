@@ -27,10 +27,10 @@ const TableData =({studentId}) =>{
     }
 
     const isAllPass = () => {
-    return 
-        resultDetails.every(item =>
-             item.result === 'pass');
-      }
+    return resultDetails.every(
+        item => item.result.trim().toUpperCase() === "PASS"
+    );
+};
 
       const totalObtained = getTotalMarks('obtained_marks');
 
@@ -86,12 +86,12 @@ const TableData =({studentId}) =>{
             </thead>
         </Table>
 
-        <p><b>Total Marks Obtained [in Words] : </b> {numWords(totalObtained).replace(/^\w/, c => c.toUpperCase())} Only</p>
+        <p><b>Total Marks Obtained [in Words] : <span style={{color:'navy'}}> {numWords(totalObtained).replace(/^\w/, c => c.toUpperCase())} Only.</span> </b></p>
 
-        <p><b>Result of Semester : </b>{isAllPass() ? "PASS" : "FAIL"}</p>
+        <p><b>Result of Semester : <span style={{ color: isAllPass() ? "green" : "red" }}>{isAllPass() ? "PASS" : "FAIL"}</span></b></p>
 
-        <p><b>Percentage : </b>{percentage}%</p>
-        <p><b>Date : </b> 19 JULY 2025</p>
+        <p><b>Percentage : <span style={{color:'navy'}}>{percentage}% </span></b></p>
+        <p><b>Date : <span style={{color:'navy'}}>19 JULY 2025 </span></b></p>
         </Container>
         </>
 

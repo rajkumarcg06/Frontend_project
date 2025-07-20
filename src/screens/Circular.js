@@ -19,9 +19,9 @@ const Circular =() =>{
             <a href="/pdf/circular-1.pdf" className="adm-p" >
             <img src="images/downloadicon.png" 
         alt="Download PDF" 
-        style={{ height: '5rem',width: '15%', cursor: 'pointer'}}/>
+        style={{ height: '6.4rem',width: '15%', cursor: 'pointer'}}/>
         <span className="hover-text">
-         Circular (1734)-Selection of PEC and OEC for 7th and 8th Semeter
+         Circular (1734)-Selection of PEC and OEC for 7th and 8th Semeter <div style={{color:'grey'}}>size : 2MB </div>
          </span>
         </a>
 

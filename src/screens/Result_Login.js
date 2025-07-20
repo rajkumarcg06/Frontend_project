@@ -41,8 +41,10 @@ const Result_Login =()=>{
         response.data.map((data, index) => {
 
             if(data.registerId === registerInput){
-            navigate(`/result_page/${registerInput}`)
+                setRegisterInput("")
+                navigate(`/result_page/${registerInput}`)
             }else{
+                setRegisterInput("")
                 setError("Invalid Register ID")
             }
         })

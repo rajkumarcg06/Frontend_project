@@ -72,7 +72,7 @@ const Header = () => {
               </NavDropdown>
 
               <NavDropdown title="Examination" id="exam-dropdown">
-                <NavDropdown.Item href="#">
+                <NavDropdown.Item href="pdf/Guidelines.pdf">
                   Examination Guidelines
                 </NavDropdown.Item>
                 <NavDropdown.Item href="https://prexam.vtu.ac.in/">
@@ -91,8 +91,11 @@ const Header = () => {
                 <NavDropdown.Item href="pdf/aiml.pdf">Artificial Intelligence and Machine Learning</NavDropdown.Item>
               </NavDropdown>
 
-              <NavDropdown title="Staff Login" id="staff-dropdown">
-                <NavDropdown.Item>Login as Admin</NavDropdown.Item>
+              <NavDropdown title="Contact" id="staff-dropdown">
+                <NavDropdown.Item href="pdf/details.pdf">Contact/Information</NavDropdown.Item>
+                 <LinkContainer to="/enquiry">
+                <NavDropdown.Item>Enquiry</NavDropdown.Item>
+                 </LinkContainer>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>

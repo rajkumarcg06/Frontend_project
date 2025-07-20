@@ -13,6 +13,9 @@ import Result_Login from './screens/Result_Login';
 import ResultPage from './screens/ResultPage';
 import Circular from './screens/Circular';
 import Course from './screens/Course';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import VTUContacts from './screens/VTUContacts';
+
 
 
   const router = createBrowserRouter(
@@ -27,6 +30,7 @@ import Course from './screens/Course';
 
         <Route path='/result_login' element={<Result_Login/>}/>
         <Route path='/result_page/:id' element={<ResultPage/>}/>
+        <Route path='/enquiry' element={<VTUContacts/>}/>
       </Route>
     )
   )
