@@ -81,6 +81,7 @@ const Header = () => {
                 <LinkContainer to="/result_login">
                   <NavDropdown.Item>Result</NavDropdown.Item>
                 </LinkContainer>
+                <NavDropdown.Item href="https://results.vtu.ac.in/DJcbcs25/index.php">VTU Results</NavDropdown.Item>
               </NavDropdown>
 
               <NavDropdown title="VTU Department" id="dept-dropdown">
